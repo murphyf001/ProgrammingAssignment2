@@ -30,15 +30,15 @@ really a list containing a function to
 <!-- -->
 
     makeVector <- function(x = numeric()) {
-            m <- NULL
-            set <- function(y) {
+            m <- NULL               # clear numeric vector m
+            set <- function(y) {    # store y in x and NULL in m offsite.
                     x <<- y
                     m <<- NULL
             }
-            get <- function() x
-            setmean <- function(mean) m <<- mean
-            getmean <- function() m
-            list(set = set, get = get,
+            get <- function() x             # function to get variable x
+            setmean <- function(mean) m <<- mean # Function to set m
+            getmean <- function() m             # Function to return m
+            list(set = set, get = get, # returns a list of four functions
                  setmean = setmean,
                  getmean = getmean)
     }
