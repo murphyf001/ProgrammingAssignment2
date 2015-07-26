@@ -2,6 +2,9 @@
 ##      retrieving the inverse of a matrix.
 ## cacheSolve solves inverse or obtains cached matrix of the solved inverse
 
+## *** Much of these functions have been adapted from the instructions for the
+##     problem at hand.
+
 ## makeCacheMatrix contains four anonymous functions for solving, caching, and 
 ##      retrieving the inverse of a matrix.
 
